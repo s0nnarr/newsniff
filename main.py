@@ -29,7 +29,6 @@ def parse_headlines(html, keyword):
             a_tag = h.find('a')
             link = a_tag['href'] if a_tag and 'href' in a_tag.attrs else None
             matches.append((text.strip(), link))
-    print(soup.prettify())
     return matches
     
 
